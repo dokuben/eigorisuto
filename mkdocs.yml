@@ -1,0 +1,75 @@
+site_name: 英語リスト
+site_description: イマージョンで英語を勉強する方法
+site_author: dokuben
+repo_url: https://github.com/dokuben/eigorisuto
+repo_name: Github
+
+nav:
+  - 'ホームページ': 'index.md'
+  - 'ガイド':
+    - '学習ガイド': 'guide.md'
+    - 'なぜ英語学習を自分で主導する必要があるのか': 'input-own.md'
+    - 'インプットとは何か？なぜインプットが必要なのか？': 'input.md'
+    - 'イマージョン': 'immersion.md'
+    - '英語の文章を最大限に活用する方法': 'readingtips.md'
+    - '辞書の例文：定義よりも重要': 'examplesent.md'
+    - 'よくある質問': 'faq.md'
+  - 'Yomitan':
+    - 'Setup': 'yomitan.md'
+  - 'リーソス': 
+    - 'リーソス': 'resources.md'
+      
+theme:
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: grey
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: grey
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlighting
+    - search.share
+  name: material
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - meta
+  - admonition
+  - attr_list
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+      
+plugins:
+  - search
+  - open-in-new-tab
+
+extra:
+  generator: false
