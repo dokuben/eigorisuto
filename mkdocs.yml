@@ -15,7 +15,7 @@ nav:
     - '辞書の例文：定義よりも重要': 'examplesent.md'
     - 'よくある質問': 'faq.md'
   - 'Yomitan':
-    - 'Setup': 'yomitan.md'
+    - 'セットアップ': 'yomitan.md'
   - 'リーソス': 
     - 'リーソス': 'resources.md'
       
